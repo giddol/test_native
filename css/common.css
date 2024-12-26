@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+	font-family: "Malgun Gothic", "맑은 고딕", helvetica, sans-serif;
+	font-size:13px;
+}
+ol, ul {
+	list-style: none;
+}
+li {
+	display:inline-block;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 12px;
+}
+.listtr:hover{
+	background-color: #f2f2f2;
+}
+.listhead th {
+	border-top: 2px solid #d5d5d5;
+	padding: 10px 14px;
+	font-size: 13px;
+	font-weight: bold;
+	border-bottom: 1px solid #d5d5d5;
+}
+
+.listhead td {text-align:left;}
+.list td {
+	text-align: center;
+	padding: 7px;
+	line-height: 1.2;
+	color:#333;
+	border-bottom:1px solid #e9e9e9;
+}
+.list td.tdsub{
+	font-size:13px;
+	text-align: left;
+}
+.list td img {vertical-align:top;}
+.listnotice .tdnum {
+	background-color: #a7a7a7 !important;
+	font-weight: bold;
+	color :#fff;
+}
+
+.currenttr {
+	background-color: #f2f2f2;
+}
+
+
+a:hover {
+    color: #000;
+    text-decoration: underline;
+	cursor:pointer;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+.btn-normal:hover {
+    border: 1px solid #000;
+	cursor: pointer;
+}
+.currentPage {
+	font-weight:bold;
+}
+.pagination ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+	border: 1px solid #aaa;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    color: #333;
+	box-sizing: border-box;
+	min-width:40px;
+	text-align:center;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    border: 1px solid #000;
+    font-weight: bold;
+}
+
+.pagination .currentPage {
+    border: 1px solid #000;
+    font-weight: bold;
+}
+.search {
+	text-align: center;
+}
+select, input, textarea, .btn-normal, #file_upload_list {
+	padding: 5px;
+	border: 1px solid #aaa;
+	background-color: #fff;
+	border-radius: 3px;
+	box-sizing: border-box;
+	min-height:30px;
+	vertical-align: middle;
+	font-family: inherit;
+}
+
+#file_upload_list {
+	display:block;
+	margin-left: 10px;
+	text-align: left;
+	width:555px;
+	background-color: #c0c0c0;
+}
+
+#wrap {
+	width:100%;
+	max-width:1200px;
+	padding: 20px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.btns-container {
+	margin-top: 10px;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.pb30 {
+	padding-bottom:30px;
+}
+
+.view-container {
+	border-top: 2px solid #d5d5d5;
+	border-bottom: 1px solid #d5d5d5;
+}
+
+.view-info {
+	border-bottom: 1px solid #d5d5d5;
+	padding: 5px;
+}
+
+.view-info h1 {
+	font-size:16px;
+	font-weight:bold;
+}
+
+.view-info p {
+	font-size:12px;
+	color: #999;
+}
+
+.view-content {
+	padding: 20px 5px;
+}
+
+.mt10 {
+	margin-top:10px;
+}
+
+#write-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	text-align: left;
+	padding: 20px;
+}
+
+/* 제목 */
+#write-wrap h1 {
+	font-size:20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+#write-wrap form {
+	width: 760px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.mt10 {
+	margin-top: 10px;
+}
+
+#write-wrap .write-label {
+	display: inline-block;
+	font-weight: bold;
+	width: 90px;
+	margin-right: 10px; 
+}
+
+#write-wrap .write-config-label {
+	display: inline-block;
+	font-weight: bold;
+	margin-right: 10px; 
+	text-align: left;
+}
+
+#write-wrap .write-config-label:not(:first-of-type) {
+	margin-left: 20px;
+}
+#write-wrap .form-group {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+
+#write-wrap textarea {
+	resize: vertical;
+}
+
+/* 파일 입력 필드 숨김 */
+.file-input {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.file-input input[type="file"] {
+	font-size: 0; /* 텍스트 숨기기 */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0; /* 완전히 숨김 */
+	cursor: pointer;
+}
+
+/* 커스터마이즈된 버튼 */
+.file-input button {
+	width:85px;
+	padding: 5px;
+	border: 1px solid #aaa;
+	background-color: #eee;
+	border-radius: 3px;
+	box-sizing: border-box;
+	min-height:30px;
+	vertical-align: middle;
+	font-family: inherit;
+}
+
+.prevFile li {
+	display:block;
+	margin:2px 0;
+	
+}
+
+.prevFile li .file-name {
+	display:inline-block;
+	width:150px;
+	text-align: left;
+}
+.prevFile li .file-size {
+	display:inline-block;
+	width: 80px;
+	text-align: right;
+}
+
+
+button {
+	cursor: pointer;
+}
+
+.view-content * {
+    max-width: 100% !important;
+}
+
+a.add-file {
+	color:inherit;
+	font-weight:bold;
+}
+
+.novisible .tdsub {
+	text-decoration: line-through;
+}
